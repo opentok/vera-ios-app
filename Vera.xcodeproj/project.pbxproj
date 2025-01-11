@@ -29,9 +29,30 @@
 		1F470CF12D30991000F8FABF /* VeraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1F470D362D31F06200F8FABF /* Exceptions for "Vera" folder in "VeraTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = 1F470CE62D30991000F8FABF /* VeraTests */;
+		};
+		1F470D372D31F06200F8FABF /* Exceptions for "Vera" folder in "VeraUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = 1F470CF02D30991000F8FABF /* VeraUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1F470CD92D30990E00F8FABF /* Vera */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1F470D362D31F06200F8FABF /* Exceptions for "Vera" folder in "VeraTests" target */,
+				1F470D372D31F06200F8FABF /* Exceptions for "Vera" folder in "VeraUITests" target */,
+			);
 			path = Vera;
 			sourceTree = "<group>";
 		};
@@ -328,6 +349,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +406,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
